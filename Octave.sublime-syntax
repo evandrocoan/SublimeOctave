@@ -3,6 +3,7 @@
 name: OCTAVE
 file_extensions:
   - octave
+  - m
 scope: source.octave
 contexts:
   main:
@@ -18,7 +19,7 @@ contexts:
               pop: true
         - match: '#.*\n'
           scope: comment.line.percentage.octave
-          
+
         - match: '"'
           scope: punctuation.definition.string.begin.octave
           push:
@@ -28,10 +29,10 @@ contexts:
               1: punctuation.definition.string.end.octave
               2: invalid.illegal.unexpected-end-of-line.octave
             pop: true
-            
+
         - match: '#.*\n'
           scope: comment.line.percentage.octave
-          
+
         - match: (?<!\.)\b(end(for|if|while|switch|function))\b
           comment: Control keywords
           scope: keyword.control.octave
