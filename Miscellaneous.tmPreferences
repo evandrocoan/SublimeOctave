@@ -36,13 +36,13 @@
 				<key>name</key>
 				<string>TM_COMMENT_START</string>
 				<key>value</key>
-				<string># </string>
+				<string>% </string>
 			</dict>
 			<dict>
 				<key>name</key>
 				<string>TM_COMMENT_START_1</string>
 				<key>value</key>
-				<string>#{
+				<string>%{
 </string>
 			</dict>
 			<dict>
@@ -50,7 +50,7 @@
 				<string>TM_COMMENT_END_1</string>
 				<key>value</key>
 				<string>
-#}
+%}
 </string>
 			</dict>
 		</array>
